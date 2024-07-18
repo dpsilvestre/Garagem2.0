@@ -15,11 +15,11 @@ router = DefaultRouter()
 
 router.register(r"usuarios", UserViewSet, basename="usuarios")
 router.register(r"acessorios", AcessorioViewSet, basename="acessorios")
-router.register(r"categoria", CategoriaViewSet, basename="categorias")
-router.register(r"cor", CorViewSet, basename="cores")
-router.register(r"marca", MarcaViewSet, basename="marcas")
-router.register(r"modelo", ModeloViewSet, basename="modelos")
-router.register(r"veiculo", VeiculoViewSet, basename="veiculos")
+router.register(r"categorias", CategoriaViewSet, basename="categorias")
+router.register(r"cores", CorViewSet, basename="cores")
+router.register(r"marcas", MarcaViewSet, basename="marcas")
+router.register(r"modelos", ModeloViewSet, basename="modelos")
+router.register(r"veiculos", VeiculoViewSet, basename="veiculos")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
