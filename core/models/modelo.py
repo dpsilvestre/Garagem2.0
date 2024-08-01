@@ -9,3 +9,9 @@ class Modelo(models.Model):
 
     def __str__(self):
         return f"{self.nome}-{self.marca.nome}"
+    
+    class Meta:
+        """Meta options for the model."""
+
+        verbose_name = "Modelo"
+        verbose_name_plural = "Modelos"
